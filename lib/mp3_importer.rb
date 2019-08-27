@@ -13,7 +13,6 @@ class MP3Importer
   end
   
   def import
-    @files = files
     @files.each{|file| return file}
   end
 end 
