@@ -7,8 +7,8 @@ class MP3Importer
   end
   
   def files
-    Dir["#{@music_path}/*.mp3"]
-    
+    with_path = Dir["#{@music_path}/*.mp3"]
+    @files
   end
   
   #def import()
