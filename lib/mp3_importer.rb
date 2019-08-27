@@ -4,7 +4,7 @@ class MP3Importer
   def initialize(music_path)
     @music_path = music_path
   
-  def files()
+  def files
     Dir["/path/to/search/*"]
   end
   
