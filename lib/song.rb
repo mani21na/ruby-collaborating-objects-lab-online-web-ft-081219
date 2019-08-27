@@ -19,10 +19,10 @@ class Song
     artist.add_song(self)
   end
   
-  def self.new_by_filename(file_name)
-    file_name_array = file_name.chomp(".mp3").split(" - ")
-    new_song = self.new(file_name_array[1])
-    new_song.artist = file_name_array[0]
-    new_song
+  def self.new_by_filename(file)
+    song_info = file.chomp(".mp3").split(" - ")
+    song = Song.new(song_info[1])
+    song.artist_name = song_info[0]
+    song
   end
 end 
