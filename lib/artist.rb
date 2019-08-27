@@ -16,6 +16,10 @@ class Artist
     @@all
   end
   
+    def save
+    @@all << self 
+  end
+  
   def add_song(title)
     @songs << title
     title.name = self
