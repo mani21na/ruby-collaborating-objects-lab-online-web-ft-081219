@@ -71,3 +71,5 @@ class Artist
     Song.all.select {|song| song.artist == self}
   end
 end 
+
+=end
