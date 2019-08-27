@@ -8,7 +8,8 @@ class MP3Importer
   
   def files
     with_path = Dir["#{@music_path}/*.mp3"]
-    @files
+    with_path.each go |path|
+      path.
   end
   
   #def import()
