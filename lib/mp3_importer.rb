@@ -8,6 +8,6 @@ class MP3Importer
     Dir["#{@music_path}/*.mp3"]
   end
   
-  def import()
-  end
+  #def import()
+  #end
 end 
