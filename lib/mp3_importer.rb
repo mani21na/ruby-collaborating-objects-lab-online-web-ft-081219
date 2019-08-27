@@ -6,10 +6,10 @@ class MP3Importer
     @files = []
   end
   
-  def files
-    with_path = Dir["#{@music_path}/*.mp3"]
-    with_path.each go |path|
-      path.
+ def files
+    Dir.chdir(@path) do | path |
+        Dir.glob("*.mp3")
+    end
   end
   
   #def import()
