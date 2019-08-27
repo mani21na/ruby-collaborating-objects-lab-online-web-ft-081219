@@ -16,4 +16,5 @@ class Song
     Artist.all.detect{|artist| artist.name == names} || Artist.new(name)
   end
   
+  def new
 end 
